@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Notable&family=Poetsen+One&display=swap');
+
+:root {
+    --primary-color: #004385;
+    --secondary-color: #EC7E59;
+    --accent1-color: #087CA7;
+    --accent2-color: #033860;
+
+    --heading-font: 'Notable', serif;
+    --paragraph-font: 'Caveat', sans-serif;
+
+    --nav-background-color: #05B2DC;
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: #031A6B;
+    --nav-hover-background-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* mobile **************************/
+header {
+    background-color: var(--primary-color); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    border-bottom: 5px solid rgb(0, 0, 0);   
+    font-family: "Poetsen One", serif;
+    color: #ffffff;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav { 
+    background-color: var(--nav-background-color);
+    margin: 0 auto;
+    max-width: 1310px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-hover-link-color);
+    text-align: center;
+    font-family: "Poetsen One", serif;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline black;
+    border: 1px solid rgba(0, 0, 0, 0.459);
+    text-shadow: 2px 1px rgb(219, 225, 226);
+}
+
+.active {
+	color: yellow;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+        justify-content: space-evenly;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+
+
+main {
+    display: grid;
+}
+
+
+main img {
+    float: right;
+    display: flex;
+    width: 250px;
+    height: auto;
+    padding: .5rem;
+    position: inherit;
+    border-radius: 150px;
+}
+
+.country {
+    float: left;
+    width: 100%;
+}
+
+.country img {
+    max-width: 100%;
+    float: left;
+    height: auto;
+    border-radius: 0%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+  
+.card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
