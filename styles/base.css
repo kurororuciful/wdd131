@@ -33,13 +33,9 @@ header {
     color: #ffffff;
 }
 
-header,
+footer,
 main {
-	margin: 0 auto;
-}
-
-h1 {
-	font-size: 2rem;
+	margin: auto 10px;
 }
 
 nav { 
@@ -61,10 +57,10 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(0, 0, 0);
-    text-decoration: underline black;
+    color: rgb(255, 255, 255);
+    text-decoration: underline rgb(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.459);
-    text-shadow: 2px 1px rgb(219, 225, 226);
+    text-shadow: 2px 1px rgb(4, 29, 34);
 }
 
 .active {
@@ -82,43 +78,75 @@ nav a:hover {
 	}
 }
 
-
 main {
     display: grid;
+    grid-template-columns: 2fr 1fr repeat(3, 0);
+    grid-template-rows: 5fr repeat(4, 0);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
-
 
 main img {
     float: right;
     display: flex;
     width: 250px;
     height: auto;
-    padding: .5rem;
+    padding: .25rem;
     position: inherit;
     border-radius: 150px;
 }
 
-.country {
-    float: left;
-    width: 100%;
-}
-
 .country img {
     max-width: 100%;
+    width: 200px;
     float: left;
     height: auto;
     border-radius: 0%;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.about-item, .webdev-item {
+    position: relative;
+    padding-bottom: 40px;
+    padding: 0 20px;
 }
-  
-.card {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+
+.about, .webdev {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.webdev {
+    justify-items: center;
+}
+
+.webdev-item, .about-item {
+    padding-top: 40px;
+}
+
+.country> h3 {
+    border-bottom: 1px solid black;
+}
+
+.country {
+    padding: 40px 20px;
+}
+
+figcaption{
+    text-align: center;
+    padding: 10px 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.main-title {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px 
 }
