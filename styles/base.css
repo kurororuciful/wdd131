@@ -57,10 +57,10 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(8, 32, 63);
     text-decoration: underline rgb(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.459);
-    text-shadow: 2px 1px rgb(4, 29, 34);
+    text-shadow: 2px 1px rgb(255, 255, 255);
 }
 
 .active {
