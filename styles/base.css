@@ -50,14 +50,14 @@ nav ul {
 
 nav a {
     display: block;
-    color: var(--nav-hover-link-color);
+    color: black;
     text-align: center;
     font-family: "Poetsen One", serif;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: rgb(0, 0, 0);
+    color: var(--nav-hover-link-color);
     text-decoration: underline rgb(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.459);
     text-shadow: 2px 1px rgb(255, 255, 255);
