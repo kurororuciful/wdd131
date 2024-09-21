@@ -7,6 +7,7 @@
     <meta name="author" content="O Manantan">
     <meta name="description" content="This is the first assignment in WDD 131 - Dynamic Web Fundamentals of O Manantan">
     <link rel ="stylesheet" href="styles/base.css"/>
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
     <header>
@@ -33,8 +34,10 @@
             </div>
             <div class="country">
                 <h3>Cavite, Philippines</h3>
-                <figure><img src="images/flag" alt="This is the official flag of The Republic of the Philippines"></figure> <!--edit src-->
-                <figcaption><h5>Official Flag of The Republic of the Philippines</h5></figcaption>
+                    <figure class="float-figure">
+                        <img src="images/flag" alt="Official flag of the Philippines">
+                        <figcaption>Official Flag of the Philippines</figcaption>
+                    </figure>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis dolores itaque quaerat! Natus ex officiis tenetur non beatae aliquid, rerum vel facere quaerat voluptatibus, culpa consequatur ratione dolores animi a suscipit laudantium iste tempora cumque.</p>
             </div>
         </div>
@@ -57,10 +60,10 @@
     </main>
     <footer>
         <p>
-            &copy;<span id="currentyear"></span> 🏍 O Manantan 🏍 Cavite, Philippines
+            &copy; <span id="year"></span> 🏍 O Manantan 🏍 Cavite, Philippines
         </p>
         <p>
-            <!--ID of 'lastModified' to be populated with JS code-->
+            Last modified: <span id="lastModified"></span>
         </p>
     </footer>
 </body>

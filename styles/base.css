@@ -86,7 +86,7 @@ main {
     grid-row-gap: 0px;
 }
 
-main img {
+.about img {
     float: right;
     display: flex;
     width: 250px;
@@ -96,18 +96,13 @@ main img {
     border-radius: 150px;
 }
 
-.country img {
-    max-width: 100%;
-    width: 200px;
-    float: left;
-    height: auto;
-    border-radius: 0%;
+.about-item {
+    padding: 0 20px;
 }
 
-.about-item, .webdev-item {
+.webdev-item {
     position: relative;
-    padding-bottom: 40px;
-    padding: 0 20px;
+    padding-left: 50px;
 }
 
 .about, .webdev {
@@ -130,11 +125,28 @@ main img {
 
 .country {
     padding: 40px 20px;
+    width: 100%;
 }
 
-figcaption{
-    text-align: center;
-    padding: 10px 30px;
+.country p {
+    margin-top: 20px;
+}
+
+.float-figure {
+    float: left; 
+    width: 40%; 
+    margin: 20px 10px 0 10px; 
+    text-align: center; 
+ }
+  
+ .float-figure img {
+    width: 100%; 
+    border-radius: 0;
+ }
+  
+.float-figure figcaption {
+    font-style: italic;
+    padding: 5px;
 }
 
 h3 {
