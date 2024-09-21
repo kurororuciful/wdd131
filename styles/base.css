@@ -84,6 +84,13 @@ main {
     grid-template-rows: 5fr repeat(4, 0);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    font-family: var(--paragraph-font);
+    letter-spacing: 2px;
+}
+
+h2, h3 {
+    font-family: var(--heading-font);
+    font-size: small;
 }
 
 .about img {
