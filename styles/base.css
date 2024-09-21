@@ -17,7 +17,6 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -84,13 +83,12 @@ main {
     grid-template-rows: 5fr repeat(4, 0);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    font-family: var(--paragraph-font);
-    letter-spacing: 2px;
+    font-family: Georgia, Times, 'Times New Roman', serif
 }
 
 h2, h3 {
     font-family: var(--heading-font);
-    font-size: small;
+    font-size: larger;
 }
 
 .about img {
@@ -162,6 +160,9 @@ h3 {
 
 footer {
     text-align: center;
+    font-family: var(--paragraph-font);
+    background-color: var(--secondary-color);
+    margin: 0;
 }
 
 .main-title {
