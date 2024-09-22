@@ -1,0 +1,14 @@
+@media screen and (min-width: 500px){
+
+    header {
+        background-color: black;
+        color: #ffffff;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem; /*used them separately since it was not suggested by VSC XD */
+    }
+}
