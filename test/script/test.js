@@ -19,9 +19,9 @@ button.addEventListener('click', () => {
     deleteButton.textContent = '❌';
     list.appendChild(li);
 
-deleteButton.addEventListener('click', () => {
-    list.removeChild(li);
-    });
+    deleteButton.addEventListener('click', () => {
+        list.removeChild(li);
+      });
 
-input.focus();
+    input.focus();
 });
