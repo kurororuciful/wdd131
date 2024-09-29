@@ -8,8 +8,9 @@ button.addEventListener('click', () => {
     const myItem = input.value;
     input.value = '';
 
-    //trim
-    if (input.value.trim() !== '') {
+//    trim
+//    if (input.value.trim() !== '') {// 
+//    **EACH TIME I ADD THE 'TRIM', THE PROGRAM IS NOT WORKING
             
         //create
         const li = document.createElement('li');
@@ -22,11 +23,12 @@ button.addEventListener('click', () => {
         li.appendChild(deleteButton);
         deleteButton.textContent = '❌';
         list.appendChild(li);
-    }
     
     deleteButton.addEventListener('click', () => {
         list.removeChild(li);
+    
     });
 
     input.focus();
+//    }
 });
