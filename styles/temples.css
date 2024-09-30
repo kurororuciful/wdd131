@@ -1,0 +1,89 @@
+/*   Color Schema
+   https://coolors.co/686868-c2aff0-9191e9-457eac-2d5d7b    */
+
+:root {
+    --box-color: #963484ff;
+    --navigation-color: #3066beff;
+    --active-navigation-color: #60afffff;
+    --header-color: #28c2ffff;
+    --hover-color: #2af5ffff;
+    --paragraph-color: black;
+    --navigation-text-color: white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+    
+header {
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--paragraph-color);
+    text-shadow: 2px 0 2px var(--navigation-text-color);
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: var(--navigation-color);
+    margin: 0 auto;
+    max-width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+	display: block;
+	color: var(--navigation-text-color);
+    text-shadow: 2px 0 2px black;
+    font-family: "Poetsen One", sans-serif;
+    letter-spacing: 2px;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+    background-color: var(--hover-color);
+    text-shadow: 2px 0 2px var(--navigation-text-color);
+    letter-spacing: 2px;
+    color: var(--paragraph-color);
+    border: 1px solid var(--box-color);
+}
+
+body {
+    font-family: "Caveat", serif;
+}
+
+main {
+    max-width: 800px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--navigation-color);
+    border: 1px solid var(--box-color);
+}
+
+footer > p {
+    color: var(--navigation-text-color);
+    font-family: "Poetsen One", sans-serif;
+    font-size: 10px;
+    text-shadow: 2px 0 2px var(--paragraph-color);
+    letter-spacing: 2px;
+}
