@@ -1,9 +1,9 @@
-// select the DOM elements for output
+// footer year output
 const year = document.querySelector("#year");
 
-// use the date object
+// footer last modified output
 const today = new Date();
-
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
-
 document.getElementById("lastModified").textContent = new Date(document.lastModified).toLocaleString();
+
+// hamburger button
