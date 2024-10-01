@@ -127,17 +127,23 @@ footer > p {
 	background-color: var(--navigation-text-color);
 	color: var(--paragraph-color);
     margin: 0 20px;
+    position: absolute;
+    right: 10px;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-end; 
 }
 
 /* hamburger menu */
 
 #menu::before {
     content: "≡";
+}
+
+.before {
+    position: absolute;
+    
 }
 
 
