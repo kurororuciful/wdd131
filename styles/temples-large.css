@@ -11,22 +11,22 @@
     --navigation-text-color: white;
 }
 
-@media (min-width: 640px) {
-	nav ul {
+@media (min-width: 891px) {
+	.navigation {
 		display: flex;
-        justify-content: right;
 	}
 	
-    nav ul li {
+    .navigation li {
 		flex: 1 1 100%;
+        display: block;
 	}
 
-    main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
-    }
+    .navigation a {
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
 }
 
