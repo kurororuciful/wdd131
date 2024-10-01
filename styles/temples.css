@@ -13,6 +13,7 @@
 
 * {
 	margin: 0;
+    padding: 0;
 	box-sizing: border-box;
     
 }
@@ -44,6 +45,7 @@ nav {
     margin: 0 auto;
     max-width: 800px;
     list-style: none;
+
 }
 
 nav ul {
@@ -145,7 +147,6 @@ footer > p {
     position: absolute;
     
 }
-
 
 .show li {
 	display: block;
