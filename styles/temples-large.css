@@ -1,16 +1,6 @@
 /*   Color Schema
    https://coolors.co/686868-c2aff0-9191e9-457eac-2d5d7b    */
 
-   :root {
-    --box-color: #963484ff;
-    --navigation-color: #3066beff;
-    --active-navigation-color: #60afffff;
-    --header-color: #28c2ffff;
-    --hover-color: #2af5ffff;
-    --paragraph-color: black;
-    --navigation-text-color: white;
-}
-
 @media (min-width: 891px) {
 	.navigation {
 		display: flex;
