@@ -1,0 +1,25 @@
+:root {
+    --primary-color: rgb(231, 45, 45);
+    --secondary-color: rgb(1, 100, 1);
+    --text-color: rgb(247, 247, 247);
+    --border
+}
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+footer > p {
+    color: var(--text-color);
+    font-size: 10px;
+}
