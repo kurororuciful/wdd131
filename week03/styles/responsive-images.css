@@ -1,0 +1,23 @@
+/* Choose one of the following at the bottom to set the size of the image .hero */
+
+/* The first one should have auto on one between width and height 
+.hero img {
+    width: 100%;
+    height: auto;
+} 
+
+The second one should be by ratio, which you can choose one below 
+.hero img {
+    aspect-ratio: 1 / 1;
+    aspect-ratio: 1;
+    aspect-ratio: auto 3/4;
+    aspect-ratio: 9/6 auto;
+}
+
+The third is by setting the exact details, we will be using this for this activity */
+.hero img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
