@@ -1,25 +1,66 @@
 :root {
-    --primary-color: rgb(231, 45, 45);
-    --secondary-color: rgb(1, 100, 1);
+    --headfootborder: 20px solid rgb(12, 12, 12);
+    --secondary-color: rgb(228, 27, 0);
     --text-color: rgb(247, 247, 247);
-    --border
+    --bodyborder: 1px solid rgb(165, 0, 165);
+    --primary-color: rgb(40, 40, 136);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
 
+.head {
+    text-align: center;
+    padding: 1rem 0 2rem;
+}
 
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 20px solid var(--secondary-color);
+    border-top: var(--headfootborder);
+}
 
+img {
+    height: auto;
+    width: 100%;
+}
 
+main {
+    padding: 0;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
+th {
+    align-content: right;
+}
 
 footer {
     text-align: center;
     background-color: var(--primary-color);
     padding: 1rem;
+    border-bottom: var(--headfootborder);
 }
 
 footer > p {
     color: var(--text-color);
-    font-size: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 800px) {
+    .hero img {
+        border: none;
+    }
 }
