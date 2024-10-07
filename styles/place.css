@@ -9,7 +9,6 @@
 * {
     margin: 0;
     padding: 0;
-	box-sizing: border-box;
 }
 
 .head {
@@ -28,12 +27,17 @@ header {
 }
 
 img {
-    height: auto;
     width: 100%;
+    object-fit: cover;
 }
 
 main {
     padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .container {
@@ -42,8 +46,8 @@ main {
     align-items: center;
 }
 
-th {
-    align-content: right;
+.th {
+    margin-right: 0;
 }
 
 footer {
@@ -60,7 +64,7 @@ footer > p {
 }
 
 @media (min-width: 800px) {
-    .hero img {
-        border: none;
+    img {
+
     }
 }
