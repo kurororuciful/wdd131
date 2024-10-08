@@ -18,7 +18,6 @@ let t = 14.2;
 let v = 59;
 
 if (t <= 10 && v > 4.8) {
-    const windChill = getWindChill(t, v);
     result.textContent = getWindChill(t, v).toFixed(1);
 } 
 else {
