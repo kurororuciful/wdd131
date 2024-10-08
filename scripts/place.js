@@ -11,8 +11,8 @@ document.getElementById("lastModified").textContent = new Date(document.lastModi
 // ( T ) is the air temperature in degrees Celsius.
 // ( V ) is the wind speed in kilometers per hour (kph).
 
-const t = 14.2;
-const v = 59;
+let t = 14.2;
+let v = 59;
 
 function getWindChill(t,v) {
     return 13.12 + 0.6215 * t - 11.37 * (v ** 0.16) + 0.3965 * t * (v ** 0.16);
@@ -20,8 +20,8 @@ function getWindChill(t,v) {
 
 if (t <= 10 && v > 4.8) {
     const windChill = getWindChill(t, v);
-    document.querySelector("#result").innerHTML = `${windChill.toFixed(2)} °C`;
+    result.textContent = getWindChill(t, v).toFixed(1);
 } 
 else {
-    document.querySelector("#result").innerHTML = `N/A`;
+    result.textContent = "N/A";
 }
