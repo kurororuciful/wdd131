@@ -2,7 +2,7 @@
     --headfootborder: 20px solid rgb(12, 12, 12);
     --secondary-color: rgb(228, 27, 0);
     --text-color: rgb(247, 247, 247);
-    --bodyborder: 1px solid rgb(165, 0, 165);
+    --background: rgba(255, 255, 255, 0.466);
     --primary-color: rgb(40, 40, 136);
 }
 
@@ -31,6 +31,10 @@ img {
     object-fit: cover;
 }
 
+img.icon {
+    max-width: 100px;
+}
+
 main {
     padding: 0;
 }
@@ -40,14 +44,29 @@ body {
     grid-template-columns: 1fr;
 }
 
-.container {
+h2 {
+    padding: 2rem;
+}
+
+.container-data, .container-weather {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.th {
-    margin-right: 0;
+.data, .weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+th {
+    text-align: right;
+}
+
+th, td {
+    max-width: 200px;
+    padding: .5rem;
 }
 
 footer {
@@ -63,8 +82,52 @@ footer > p {
     letter-spacing: 2px;
 }
 
-@media (min-width: 800px) {
-    img {
 
+/*###############################*/
+@media (min-width: 801px) {
+    main{
+        position: relative;
+    }
+
+    .container-data {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .container-weather {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .container-data, .container-weather {
+        position: absolute;
+        padding: 10px 20px 20px 0px;
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        background-color: var(--background);
+    }
+
+    .container-weather > h2::after {
+        content: "🌧️";
+    }
+
+    img.icon {
+        display: none;
+    }
+
+    th, td, table, tr {
+        padding: .5rem;
+        border: 1px dotted var(--secondary-color);
+        border-radius: 3px;
+        background-color: var(--text-color);
+    }
+
+    h2 {
+        padding: .5rem;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        width: 100%;
+        border-radius: 5px 0;
     }
 }

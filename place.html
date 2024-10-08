@@ -18,93 +18,93 @@
     <main>
         <div class="hero">
             <picture>
-                <source src="images/place-phone.webp" media="(max-width=800px)">
-                <source src="images/place-pc.webp" media="(min-width=801px)">
+                <source srcset="images/place-phone.webp" media="(max-width: 800px)">
+                <source srcset="images/place-pc.webp" media="(min-width: 801px)">
                 <img src="images/place-phone.webp" alt="Image of New Zealand horizon" width="500">
             </picture>
         </div>
 
-        <div class="container">
+        <div class="container-data">
             <h2>Data</h2>
 
-            <table class="data">
-                <tbody>
-                    <tr>
-                        <th>Area:</th>
-                        <td>268,021 sq km</td>
-                    </tr>    
+        <table class="data">
+            <tbody>
+                <tr>
+                    <th>Area:</th>
+                    <td>268,021 sq km</td>
+                </tr>    
 
-                    <tr>
-                        <th>Population:</th>
-                        <td>5,411,710</td>
-                    </tr> 
+                <tr>
+                    <th>Population:</th>
+                    <td>5,411,710</td>
+                </tr> 
 
-                    <tr>
-                        <th>Capital:</th>
-                        <td>Wellington</td>
-                    </tr> 
+                <tr>
+                    <th>Capital:</th>
+                    <td>Wellington</td>
+                </tr> 
 
-                    <tr>
-                        <th>Languages:</th>
-                        <td>English; Maori; New Zealand Sign Language</td>
-                    </tr> 
+                <tr>
+                    <th>Languages:</th>
+                    <td>English; Maori; New Zealand Sign Language</td>
+                </tr> 
 
-                    <tr>
-                        <th>Currency:</th>
-                        <td>New Zealand dollar (NZ$)</td>
-                    </tr> 
+                <tr>
+                    <th>Currency:</th>
+                    <td>New Zealand dollar (NZ$)</td>
+                </tr> 
 
-                    <tr>
-                        <th>Time Zone:</th>
-                        <td>UTC+12</td>
-                    </tr> 
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC+12</td>
+                </tr> 
 
-                    <tr>
-                        <th>Calling Code:</th>
-                        <td>+64</td>
-                    </tr> 
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+64</td>
+                </tr> 
 
-                    <tr>
-                        <th>Internet TLD:</th>
-                        <td>.nz</td>
-                    </tr> 
+                <tr>
+                    <th>Internet TLD:</th>
+                    <td>.nz</td>
+                </tr> 
 
-                </tbody>
+            </tbody>
 
-            </table>
-  
+        </table>        
+                    
         </div>
-        
-        <div class="container">
+
+        <div class="container-weather">
             <h2>Weather</h2>
-            <img src="images/weather.svg" alt="Icon of a rainy day" width="125">
+            <img src="images/weather.svg" alt="Icon of a sun and rain" width="25" class="icon">
 
             <table class="weather">
                 <tbody>
                     <tr>
                         <th>Temperature:</th>
-                        <td></td>
+                        <td>14.2 °C</td>
                     </tr>
 
                     <tr>
                         <th>Conditions:</th>
-                        <td></td>
+                        <td>Spring</td>
                     </tr>
 
                     <tr>
                         <th>Wind:</th>
-                        <td></td>
+                        <td>59km/h</td>
                     </tr>
 
                     <tr>
                         <th>Wind Chill:</th>
-                        <td></td>
+                        <td><span id="#result"></span></td>
                     </tr>
 
                 </tbody>
 
             </table>
-
+                    
         </div>
 
     </main>
