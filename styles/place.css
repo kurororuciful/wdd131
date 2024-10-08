@@ -93,13 +93,13 @@ footer > p {
     }
 
     .container-data {
-        top: 2rem;
-        left: 2rem;
+        top: 2.5rem;
+        left: 1.5rem;
     }
 
     .container-weather {
-        bottom: 2rem;
-        right: 2rem;
+        bottom: 2.5rem;
+        right: 1.5rem;
     }
 
     .container-data, .container-weather {
