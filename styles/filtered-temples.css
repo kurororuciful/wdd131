@@ -1,0 +1,180 @@
+/*   Color Schema
+   https://coolors.co/686868-c2aff0-9191e9-457eac-2d5d7b    */
+
+:root {
+    --box-color: #963484ff;
+    --navigation-color: #3066beff;
+    --active-navigation-color: #60afffff;
+    --header-color: #28c2ffff;
+    --hover-color: #2af5ffff;
+    --paragraph-color: black;
+    --navigation-text-color: white;
+}
+
+* {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    
+}
+    
+header {
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--paragraph-color);
+    text-shadow: 2px 0 2px var(--navigation-text-color);
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: var(--navigation-color);
+}
+
+.navigation {
+    margin: 0 auto;
+    max-width: 800px;
+    list-style: none;
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.navigation li {
+	display: none;
+}
+
+nav a {
+	display: block;
+	color: var(--navigation-text-color);
+    text-shadow: 2px 0 2px black;
+    font-family: "Poetsen One", sans-serif;
+    letter-spacing: 2px;
+	text-align: center;
+    padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+    background-color: var(--hover-color);
+    text-shadow: 2px 0 2px var(--navigation-text-color);
+    letter-spacing: 2px;
+    color: var(--paragraph-color);
+    border: 1px solid var(--box-color);
+}
+
+body {
+    font-family: "Caveat", serif;
+}
+
+.match {
+	font-weight: 700;
+    border-bottom: 1px solid #777; 
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    padding: 10px 10px 0px;
+}
+
+figcaption {
+    text-shadow: 1px 2px rgb(184, 184, 184);
+    text-align: center;
+}
+
+.container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--navigation-color);
+    border: 1px solid var(--box-color);
+    padding: .5rem;
+}
+
+footer > p {
+    color: var(--navigation-text-color);
+    font-family: "Poetsen One", sans-serif;
+    font-size: 10px;
+    text-shadow: 2px 0 2px var(--paragraph-color);
+    letter-spacing: 2px;
+}
+
+#menu {
+	display: block;
+    font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: var(--navigation-text-color);
+	color: var(--paragraph-color);
+    margin: 0 20px;
+    position: absolute;
+    right: 10px;
+}
+
+.navbar {
+    display: flex;
+}
+
+/* hamburger menu */
+
+#menu::before {
+    content: "≡";
+}
+
+.before {
+    position: absolute;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+
+/*   Color Schema
+   https://coolors.co/686868-c2aff0-9191e9-457eac-2d5d7b    */
+
+   @media (min-width: 891px) {
+	.navigation {
+		display: flex;
+	}
+	
+    .navigation li {
+		flex: 1 1 100%;
+        display: block;
+	}
+
+    .navigation a {
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
+}
