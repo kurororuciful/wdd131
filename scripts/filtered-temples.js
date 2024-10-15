@@ -112,12 +112,12 @@ const allAnchor = document.querySelector("#allA");
 
 const newAnchor = document.querySelector("#newA");
 newAnchor.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => temple.dedicated > 2000));
+	createTempleCard(temples.filter(temple => temple.dedicated.split("")[0,4] > 2000));
 })
 
 const oldAnchor = document.querySelector("#oldA");
 oldAnchor.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => temple.dedicated < 1900));
+	createTempleCard(temples.filter(temple => temple.dedicated.split("")[0,4] < 1900));
 })
 
 const largeAnchor = document.querySelector("#largeA");
