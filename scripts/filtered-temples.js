@@ -99,33 +99,63 @@ const temples = [
 	},
   ];
 
-  createTempleCard();
-  
-  //Create Temple Card Function and Loop
-  function createTempleCard() {
-	temples.forEach(temple  => { 
+
+function refreshPage() {
+	location.reload();
+}
+
+createTempleCard(temples);
+
+// Filtering let ded = dedicated.split("");
+const allAnchor = document.querySelector("#allA");
+	allAnchor.addEventListener("click", refreshPage);
+
+const newAnchor = document.querySelector("#newA");
+newAnchor.addEventListener("click", () => {
+	createTempleCard(temples.filter(temple => temple.dedicated > 2000));
+})
+
+const oldAnchor = document.querySelector("#oldA");
+oldAnchor.addEventListener("click", () => {
+	createTempleCard(temples.filter(temple => temple.dedicated < 1900));
+})
+
+const largeAnchor = document.querySelector("#largeA");
+largeAnchor.addEventListener("click", () => {
+	createTempleCard(temples.filter(temple => temple.area > 90000));
+})
+
+const smallAnchor = document.querySelector("#smallA");
+smallAnchor.addEventListener("click", () => {
+	createTempleCard(temples.filter(temple => temple.area < 10000));
+})
+
+
+// Create Temple Card Function and Loop
+function createTempleCard(filteredTemples) {
+	document.querySelector(".container").innerHTML = "";
+	filteredTemples.forEach(temple => { 
 		let card = document.createElement("section");
 		let name = document.createElement("h3");
 		let location = document.createElement("p");
-		let dedication = document.createElement("p");	
+		let dedicated = document.createElement("p");
 		let area = document.createElement("p");
 		let img = document.createElement("img");
 
-		name.textContent = temple.templeName;
-		location.innerHTML = `<span class="label"><b>Location:</b></span> ${temple.templeLocation}`;
-		dedication.innerHTML = `<span class ="label"><b>Dedication:</b></span> ${temple.templeDedication}`;
-		area.innerHTML = `<span class ="label"><b>Area:</b></span> ${temple.templeArea} sq ft`;
+		name.textContent = `${temple.templeName} Temple`;
+		location.innerHTML = `<span class="label"><b>Location:</b></span> ${temple.location}`;
+		dedicated.innerHTML = `<span class="label"><b>Dedication:</b></span> ${temple.dedicated}`;
+		area.innerHTML = `<span class="label"><b>Area:</b></span> ${temple.area} sq ft`;
 		img.setAttribute("src", temple.imageUrl);
 		img.setAttribute("alt", `${temple.templeName} Temple`);
 		img.setAttribute("loading", "lazy");
 
 		card.appendChild(name);
 		card.appendChild(location);
-		card.appendChild(dedication);
+		card.appendChild(dedicated);
 		card.appendChild(area);
 		card.appendChild(img);
 
-		docunment.querySelector(".container").appendChild(card);
-		})
+		document.querySelector(".container").appendChild(card);
+		});
 	}
-   
