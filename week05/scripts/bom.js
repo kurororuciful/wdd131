@@ -29,7 +29,7 @@ deleteButton.classList.add('delete'); // this references the CSS rule .delete{wi
 li.appendChild(deleteButton);
 list.appendChild(li);
 
-deleteButton.addEventListener("click", () {
+deleteButton.addEventListener("click", () => {
     list.removeChild(li);
     deleteChapter(li.textContent); // note this new function that is needed to remove the chapter from the array and localStorage.
     input.focus(); // set the focus back to the input
@@ -55,6 +55,7 @@ function deleteChapter(chapter) {
     setChapterList();
 }
 
+/*
 //populate
 li.appendChild(listText);
 
@@ -65,7 +66,6 @@ li.appendChild(listText);
 
 
 
-/*
 //    trim
 //     if (input.value.trim() !== "") {// 
 //    **EACH TIME I ADD THE 'TRIM', THE PROGRAM IS NOT WORKING
