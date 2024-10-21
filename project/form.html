@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the Assignment in WDD131 WK05">
+    <meta name="author" content="O Manantan">
+    <title>Product Review Form</title>
+    <script defer src="scripts/project.js"></script>
+    <link href="styles/project.css" rel="stylesheet">    
+</head>
+
+
+<body>    
+<!-- HEADER HERE -->
+	<header>
+ <h1>Product Review</h1>
+    </header>
+    
+    
+<!-- NAVIGATION HERE (For Project)
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>    
+        </ul>
+    </nav>
+-->    
+    
+<!-- CONTENT HERE -->
+<main>
+    <form method="get" action="review.html" class="form1">
+        <fieldset>
+            <label>Product Name
+                <select id="select" name="product" required>
+                    <option value="" disabled selected  >Select a Product... </option>
+                    <option value="flux capacitor"      >Flux Capacitor</option>
+                    <option value="power laces"         >Power Laces</option>
+                    <option value="time circuits"       >Time Circuits</option>
+                    <option value="low voltage reactor" >Low Voltage Reactor</option>
+                    <option value="warp equalizer"      >Warp Equalizer</option>
+                </select>
+            </label>
+
+            <label class="star">Overall Rating
+                <label>⭐         <input type="radio" id="1star" name="1star" value="1"  ></label>
+                <label>⭐⭐       <input type="radio" id="2star" name="2star" value="2"  ></label>
+                <label>⭐⭐⭐     <input type="radio" id="3star" name="3star" value="3"  ></label>
+                <label>⭐⭐⭐⭐   <input type="radio" id="4star" name="4star" value="4"  ></label>
+                <label>⭐⭐⭐⭐⭐ <input type="radio" id="5star" name="5star" value="5"  ></label>
+            </label>
+
+            <label>Date of Installation<input type="date" id="date" name="installationDate" required></label>
+        
+            <p>Which features did you find user in the product?<br><i>(Check all that apply)</i></p>
+            <label><input type="checkbox" id="durability"  name="durability"   value="yes">Durability</label>
+            <label><input type="checkbox" id="easeOfUse"   name="easeOfUse"    value="yes">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="performance"  value="yes">Performance</label>
+            <label><input type="checkbox" id="design"      name="design"       value="yes">Design</label>                
+    
+            <label>Written Review <i><div>(Optional)</div></i><input type="text" id="opReview" name="opReview"></label>        
+ 
+            <label>Your Name <i><div>(Optional)</div></i><input type="text" id="opName" name="opName"></label>        
+
+            <input type="submit" value="Post Review">
+
+        </fieldset>
+    </form>
+</main> 
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <p>&copy; <span id="year"></span> 🏍 O Manantan 🏍 Cavite, Philippines</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

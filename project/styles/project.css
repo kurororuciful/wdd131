@@ -1,0 +1,91 @@
+:root {
+    --form-background-color: #ddd;
+    --text-color: black;
+    --alt-text-color: white;
+    --header-footer-background-color: rgb(25, 25, 124);
+
+}
+
+    /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+header {
+    padding: 1rem 2%;
+}
+
+footer {
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+footer > p {
+    margin: 5px;
+}
+
+header, footer {
+    background-color: var(--header-footer-background-color);
+    color: var(--alt-text-color);
+    letter-spacing: 2px;
+}
+
+header h1 {
+    margin: 0; 
+    font-weight: normal;
+}
+
+.form1 {
+    background-color: var(--form-background-color);
+    margin: .5rem;
+    border: 1px solid var(--form-background-color);
+    border-radius: 5px;
+}
+
+.form1 fieldset {
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.form1 label {
+    display: block;
+    padding-top: 1.5rem;
+    font-size: .9rem;
+}
+
+.form1 div {
+    color: blue;
+    font-size: .9rem;
+}
+
+.form1 input[type="text"], .form1 input[type="date"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px gray;
+    border-radius: 6px;
+    padding: .5rem;
+    color: gray;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.form1 input[type="radio"], .form1 input[type="checkbox"] {
+    margin-right: 6px;
+    margin-bottom: 10px;
+}
+
+.form1 input[type="radio"] {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0 0;
+}
+
+.form1 input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
