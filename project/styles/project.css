@@ -1,9 +1,11 @@
 :root {
     --form-background-color: #ddd;
-    --text-color: black;
-    --alt-text-color: white;
-    --header-footer-background-color: rgb(25, 25, 124);
-
+    --main-background: #000f14;
+    --text-color: #000000;
+    --alt-text-color: #ffffff;
+    --header-footer-background-color: #083344;
+    --header-font: "Poetsen One", sans-serif;
+    --body-font: "Caveat", serif;
 }
 
     /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
@@ -24,17 +26,20 @@ footer {
 
 footer > p {
     margin: 5px;
+    font-size: 75%;;
 }
 
 header, footer {
     background-color: var(--header-footer-background-color);
     color: var(--alt-text-color);
     letter-spacing: 2px;
+    font-family: var(--header-font);
 }
 
 header h1 {
     margin: 0; 
     font-weight: normal;
+    font-family: var(--header-font);
 }
 
 .form1 {
@@ -89,3 +94,69 @@ header h1 {
     margin-bottom: 10px;
 }
 
+
+/* OTHER SITEPLAN STYLES*/
+header img {
+    border: 2px dotted var(--form-background-color);
+    border-radius: 50px;
+}
+
+.color, h1, li, h2 {
+    text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.692);
+    font-family: var(--body-font);
+    letter-spacing: 2px;
+    margin-left: 5px;
+}
+
+p {
+    margin-left: 1rem;
+}
+
+.min {
+    background-color: var(--form-background-color);
+    border: 5px dashed var(--main-background);
+    margin: .75rem;
+    padding: .5rem;
+}
+
+.poet {
+    font-family: var(--header-font);
+}
+
+.caev {
+    font-family: var(--body-font);
+    letter-spacing: 2px;
+}
+
+.hfbg {
+    background-color: var(--header-footer-background-color);
+    color: var(--alt-text-color);
+}
+
+.hft {
+    background-color: var(--alt-text-color);
+    border: 1px solid black;
+}
+
+.act {
+    background-color: var(--text-color);
+    color: var(--alt-text-color);
+}
+
+.minbg {
+    background-color: var(--main-background);
+    color: var(--alt-text-color);
+}
+
+.conbg {
+    background-color: var(--form-background-color);
+    border: 1px solid black;
+}
+
+.color {
+    max-width: 20%;
+}
+
+.wire > img {
+    margin-left: 2rem;
+}
