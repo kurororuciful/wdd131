@@ -113,7 +113,7 @@ h2 {
 }
 
 p {
-    margin-left: 1rem;
+    margin-left: 4rem;
 }
 
 .min {
@@ -127,9 +127,13 @@ p {
     font-family: var(--header-font);
 }
 
-.caev {
+.cave {
     font-family: var(--body-font);
     letter-spacing: 2px;
+}
+
+.typo > li {
+    margin: 0;
 }
 
 .hfbg {
