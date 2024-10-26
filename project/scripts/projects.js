@@ -184,6 +184,8 @@ function createProductCard(filteredProducts) {
 		img.setAttribute("src", product.imgURL);
 		img.setAttribute("alt", `image of ${product.nameP}`);
 		img.setAttribute("loading", "lazy");
+        img.setAttribute("class", "float");
+
 
         card.appendChild(img);
         card.appendChild(name);

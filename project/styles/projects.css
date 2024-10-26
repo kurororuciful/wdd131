@@ -50,7 +50,7 @@ header img {
     border-radius: 50px;
 }
 
-.color, h1, h2, h3, h4 {
+h1, h2, h3, h4 {
     text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.692);
     font-family: var(--body-font);
     letter-spacing: 2px;
@@ -100,19 +100,25 @@ li > a {
 }
 
 .container {
-    max-width: 70%;
+    max-width: 90%;
     align-content: center;
+}
+
+section {
+    border: 1px solid var(--header-footer-background-color);
+    margin: 10px;
 }
 
 .container > section > img {
     max-width: 50%;
 }
 
-.section img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* CANT MAKE THIS TO WORK, NEED TO CIRCLE BACK ABOUT THE WRAPPING
+
+.float {
+    float: left;
+    margin-left: 10px;
+}*/
 
 .store-grid {
     display: block;
