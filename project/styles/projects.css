@@ -1,0 +1,129 @@
+:root {
+    --main-background-color: #ddd;
+    --main-background: #000f14;
+    --text-color: #000000;
+    --alt-text-color: #ffffff;
+    --header-footer-background-color: #083344;
+    --header-font: "Poetsen One", sans-serif;
+    --body-font: "Caveat", serif;
+}
+
+    /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+header {
+    padding: 1rem 2%;
+}
+
+footer {
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+footer > p {
+    margin: 5px;
+    font-size: 75%;
+    font-family: var(--header-font)
+}
+
+header, footer {
+    background-color: var(--header-footer-background-color);
+    color: var(--alt-text-color);
+    letter-spacing: 2px;
+    font-family: var(--header-font);
+}
+
+header h1 {
+    margin: 0; 
+    font-weight: normal;
+    font-family: var(--header-font);
+}
+
+
+/* OTHER PROJECT STYLES*/
+header img {
+    border: 2px dotted var(--main-background-color);
+    border-radius: 50px;
+}
+
+.color, h1, h2, h3, h4 {
+    text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.692);
+    font-family: var(--body-font);
+    letter-spacing: 2px;
+    margin-left: 5px;
+}
+
+h2 {
+    margin-top: 3rem;
+}
+
+p {
+    margin-left: 4rem;
+    margin: 0 0 5px 4rem;
+    font-family: var(--body-font);
+}
+
+main {
+    background-color: var(--main-background-color);
+    border: 5px dashed var(--main-background);
+    margin: .75rem;
+    padding: .5rem;
+}
+
+.navigation {
+    font-family: var(--header-font);
+    justify-content: space-evenly;
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--main-background);
+}
+
+.navigation > a {
+    padding: 2px .5rem 2px .5rem;
+    background-color: var(--header-footer-background-color);
+    color: var(--alt-text-color);
+}
+
+li {
+    padding: 2px .5rem 2px .5rem;
+    background-color: var(--header-footer-background-color);
+    font-family: var(--header-font);
+    color: var(--alt-text-color);
+}
+
+li > a {
+    color: var(--alt-text-color);
+}
+
+.container {
+    max-width: 70%;
+    align-content: center;
+}
+
+.container > section > img {
+    max-width: 50%;
+}
+
+.section img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-grid {
+    display: block;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.ad-grid > a > img {
+    max-width: 100%;
+}
+
+.about-grid, .ad-grid {
+    padding: .5rem;
+}
